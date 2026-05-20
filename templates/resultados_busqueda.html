@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultados de búsqueda</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Resultados</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Fecha</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Localidad</th>
+                <th>Estado</th>
+                <th>Fecha cumplida</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for v in ventas %}
+            <tr>
+                <td>{{ v[0] }}</td>
+                <td>{{ v[1] }}</td>
+                <td>{{ v[2] }}</td>
+                <td>{{ v[3] }}</td>
+                <td>{{ v[4] }}</td>
+                <td>{{ v[10] }}</td>
+                <td>{{ v[15] }}</td>
+                <td>{{ v[16] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

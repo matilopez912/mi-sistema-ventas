@@ -1,0 +1,20 @@
+CREATE TABLE ventas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fecha_venta DATE,
+    nombre VARCHAR(50),
+    apellido VARCHAR(50),
+    dni VARCHAR(20),
+    calle VARCHAR(100),
+    altura VARCHAR(10),
+    entre_calle1 VARCHAR(100),
+    entre_calle2 VARCHAR(100),
+    entre_calle3 VARCHAR(100),
+    localidad VARCHAR(100),
+    cp VARCHAR(10),
+    mail VARCHAR(100),
+    telefono VARCHAR(50),
+    metodo_pago ENUM('debito','efectivo'),
+    observaciones TEXT,
+    estado ENUM('proceso','cumplida'),
+    fecha_cumplida DATE
+);

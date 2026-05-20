@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar Ventas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Buscar ventas</h1>
+    <form action="/resultado_busqueda" method="GET">
+        <label>Nombre:</label>
+        <input type="text" name="nombre"><br><br>
+
+        <label>Apellido:</label>
+        <input type="text" name="apellido"><br><br>
+
+        <label>DNI:</label>
+        <input type="text" name="dni"><br><br>
+
+        <label>Estado:</label>
+        <select name="estado">
+            <option value="">-- Seleccionar --</option>
+            <option value="proceso">En proceso</option>
+            <option value="cumplida">Cumplida</option>
+        </select><br><br>
+
+        <label>Fecha de venta:</label>
+        <input type="date" name="fecha_venta"><br><br>
+
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>

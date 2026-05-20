@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculo de Sueldo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Ingresar Ventas</h1>
+    <form action="/calcular" method="POST">
+        <h2>Ventas por Mb</h2>
+        <label>300 Mb:</label>
+        <input type="number" name="ventas_300" value="0"><br><br>
+
+        <label>600 Mb:</label>
+        <input type="number" name="ventas_600" value="0"><br><br>
+
+        <label>1000 Mb:</label>
+        <input type="number" name="ventas_1000" value="0"><br><br>
+
+        <h2>Ventas por Zona</h2>
+        <label>Zona A:</label>
+        <input type="number" name="zona_a" value="0"><br><br>
+
+        <label>Zona B:</label>
+        <input type="number" name="zona_b" value="0"><br><br>
+
+        <label>Zona C:</label>
+        <input type="number" name="zona_c" value="0"><br><br>
+
+        <h2>Extras</h2>
+        <label>Ventas con tarjeta de crédito:</label>
+        <input type="number" name="tarjeta" value="0"><br><br>
+
+        <label>Portabilidades/líneas nuevas:</label>
+        <input type="number" name="portabilidad" value="0"><br><br>
+
+        <label>¿Tuviste faltas este mes?</label>
+        <select name="faltas">
+            <option value="no">No</option>
+            <option value="si">Sí</option>
+        </select><br><br>
+
+        <button type="submit">Calcular</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nueva Venta</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Cargar nueva venta</h1>
+    <form action="/guardar_venta" method="POST">
+        <label>Fecha de venta:</label>
+        <input type="date" name="fecha_venta" required><br><br>
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required><br><br>
+
+        <label>Apellido:</label>
+        <input type="text" name="apellido" required><br><br>
+
+        <label>DNI:</label>
+        <input type="text" name="dni" required><br><br>
+
+        <label>Calle:</label>
+        <input type="text" name="calle" required><br><br>
+
+        <label>Altura:</label>
+        <input type="text" name="altura" required><br><br>
+
+        <label>Entre calle 1:</label>
+        <input type="text" name="entre_calle1"><br><br>
+
+        <label>Entre calle 2:</label>
+        <input type="text" name="entre_calle2"><br><br>
+
+        <label>Entre calle 3:</label>
+        <input type="text" name="entre_calle3"><br><br>
+
+        <label>Localidad:</label>
+        <input type="text" name="localidad" required><br><br>
+
+        <label>Código Postal:</label>
+        <input type="text" name="cp"><br><br>
+
+        <label>Email:</label>
+        <input type="email" name="mail"><br><br>
+
+        <label>Teléfono:</label>
+        <input type="text" name="telefono"><br><br>
+
+        <label>Método de pago:</label>
+        <select name="metodo_pago">
+            <option value="debito">Débito automático</option>
+            <option value="efectivo">Efectivo</option>
+        </select><br><br>
+
+        <label>Observaciones:</label>
+        <textarea name="observaciones"></textarea><br><br>
+
+        <label>Estado:</label>
+        <select name="estado">
+            <option value="proceso">En proceso</option>
+            <option value="cumplida">Cumplida</option>
+        </select><br><br>
+
+        <label>Fecha cumplida (si aplica):</label>
+        <input type="date" name="fecha_cumplida"><br><br>
+
+        <button type="submit">Guardar venta</button>
+    </form>
+</body>
+</html>

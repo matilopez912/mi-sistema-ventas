@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resultado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Detalle del sueldo</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Concepto</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Cantidad de ventas</td>
+                <td>{{ ventas }}</td>
+            </tr>
+            <tr>
+                <td>Básico</td>
+                <td>${{ sueldo_basico }}</td>
+            </tr>
+            <tr>
+                <td>Premio</td>
+                <td>${{ premio_extra }}</td>
+            </tr>
+            <tr>
+                <td>Comisiones por ventas</td>
+                <td>${{ comisiones }}</td>
+            </tr>
+            <tr>
+                <td>Comisiones por cluster</td>
+                <td>${{ cluster_total }}</td>
+            </tr>
+            <tr>
+                <td>Comisiones por tarjetas de crédito</td>
+                <td>${{ credito }}</td>
+            </tr>
+            <tr>
+                <td>Comisiones por portabilidades</td>
+                <td>${{ portabilidad }}</td>
+            </tr>
+            <tr>
+                <td>Viático</td>
+                <td>${{ viatico }}</td>
+            </tr>
+            <tr class="total">
+                <td>Total</td>
+                <td>${{ total }}</td>
+            </tr>
+            <tr class="neto">
+                <td>Total neto </td>
+                <td>${{ total_neto }}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
