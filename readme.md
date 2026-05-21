@@ -59,26 +59,24 @@ mi-sistema-ventas/
 │── README.md           # Documentación
 
 
-📸 Capturas de pantalla
+## 📸 Capturas de pantalla
 
-Menú principal
-(docs/menu.png)
+### Menú principal
+![Menú principal](docs/menu.png)
 
-Formulario de ventas
-(docs/nueva_venta1.png) (docs/nueva_venta1.png)
+### Formulario de ventas
+![Formulario de ventas](docs/nueva_venta1.png)
 
-Filtro de ventas
-(docs/buscar_ventas.png)
-(docs/resultado_busqueda.png)
+### Filtro de ventas
+![Buscar ventas](docs/buscar_ventas.png)
+![Resultado búsqueda](docs/resultado_busqueda.png)
 
-Cálculo de sueldos
-(docs/calculo1.png) (docs/calculo2.png)
-(docs/resultado_calculo_comisiones.png)
+### Cálculo de sueldos
+![Cálculo paso 1](docs/calculo1.png)
+![Cálculo paso 2](docs/calculo2.png)
+![Resultado comisiones](docs/resultado_calculo_comisiones.png)
 
 🤝 Contribuciones
 Este proyecto es parte de mi portfolio, pero cualquier sugerencia o mejora es bienvenida.
-
-📜 Licencia
-Este proyecto está bajo la licencia MIT. Podés usarlo libremente para aprender o inspirarte.
 
 ---
