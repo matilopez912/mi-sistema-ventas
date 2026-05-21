@@ -64,7 +64,19 @@
         <label>Fecha cumplida (si aplica):</label>
         <input type="date" name="fecha_cumplida"><br><br>
 
-        <button type="submit">Guardar venta</button>
+        <button type="submit">Guardar venta</button> 
+        <div class="button">
+        <button type="button" onclick="confirmarSalida()">Menú principal</button>
+    </div>
+
     </form>
+    
+        <script>
+    function confirmarSalida() {
+            if (confirm("⚠️ ¿Seguro que querés salir del formulario? Los datos no guardados se perderán.")) {
+                window.location.href = "/";
+            }
+        }
+</script>
 </body>
 </html>

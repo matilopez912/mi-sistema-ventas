@@ -36,10 +36,14 @@ def basico(total_ventas):
 
 def premio(total_ventas):
     if total_ventas >= 40:
-        return 200000
+        return 450000
     elif total_ventas >= 30:
-        return 150000
+        return 350000
     elif total_ventas >= 20:
-        return 100000
+        return 250000
+    elif total_ventas >= 15:
+        return 150000
+    elif total_ventas >=11:
+        return 50000
     else:
         return 0

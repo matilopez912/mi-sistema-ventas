@@ -8,7 +8,7 @@ app = Flask(__name__)
 conexion = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="TU_CONSTRASEÑA",
+    password="0000",
     database="mi_base"
 )
 cursor = conexion.cursor()
@@ -50,12 +50,11 @@ def calcular():
     sueldo_basico = logica.basico(total_ventas)
     premio_extra = logica.premio(total_ventas)
 
-    credito = tarjeta * 10000
+    #credito = tarjeta * 10000
     portabilidad_total = portabilidad * 17000
     viatico = 100000 if faltas == "no" else 0
 
-    total = (comisiones + cluster_total + sueldo_basico + premio_extra +
-             credito + portabilidad_total + viatico)
+    total = (comisiones + cluster_total + sueldo_basico + premio_extra + portabilidad_total + viatico)
     total_neto = (total / 100) * 79
 
     return render_template("resultado.html",
@@ -64,7 +63,7 @@ def calcular():
                            cluster_total=cluster_total,
                            sueldo_basico=sueldo_basico,
                            premio_extra=premio_extra,
-                           credito=credito,
+                           #credito=credito,
                            portabilidad=portabilidad_total,
                            viatico=viatico,
                            total=total,
@@ -138,7 +137,7 @@ def resultado_busqueda():
     cursor.execute(query, valores)
     resultados = cursor.fetchall()
 
-    return render_template("resultado_busqueda.html", ventas=resultados)
+    return render_template("resultados_busqueda.html", ventas=resultados)
 
 # ------------------ MAIN ------------------
 if __name__ == "__main__":

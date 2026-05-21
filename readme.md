@@ -1,74 +1,84 @@
-# Sistema de Ventas y Cálculo de Sueldo
+# 📊 Sistema de Ventas y Cálculo de Sueldos
 
-Proyecto desarrollado en **Python (Flask)** con **MySQL** como base de datos.  
-El sistema permite:
-- Calcular sueldos con comisiones y extras.
-- Registrar nuevas ventas en una base de datos.
-- Buscar y filtrar ventas con distintos criterios.
-- Navegar entre secciones desde un menú principal.
+Aplicación web desarrollada con **Flask** y **MySQL** para gestionar ventas y calcular sueldos de empleados.  
+Este proyecto forma parte de mi portfolio y está pensado para mostrar integración entre backend, frontend y base de datos.
 
 ---
 
-## 🚀 Tecnologías utilizadas
-- Python 3
-- Flask
-- MySQL
-- HTML / CSS (Jinja2 templates)
+## 🚀 Características
+- Registro de ventas con filtros avanzados (nombre, DNI, localidad, etc.).
+- Cálculo automático de sueldos con extras (viáticos, portabilidades, nuevas líneas, tarjeta de crédito).
+- Interfaz con formularios y tablas estilizadas.
+- Navegación clara con barra de menú.
+- Base de datos MySQL incluida (`schema.sql`).
 
 ---
 
-## 📂 Estructura del proyecto
-mi-sistema-ventas/
-│
-├── app.py                 # servidor Flask con todas las rutas
-├── logica.py              # funciones de cálculo de sueldo
-├── templates/             # páginas HTML
-│   ├── base.html
-│   ├── menu.html
-│   ├── index.html
-│   ├── resultado.html
-│   ├── nueva_venta.html
-│   ├── buscar_ventas.html
-│   └── resultado_busqueda.html
-├── static/                # archivos estáticos
-│   └── style.css
-└── schema.sql             # estructura de la base de datos
+## 🛠️ Instalación
 
-
----
-
-## 🛠️ Instalación y configuración
-
-**Clonar el repositorio**
-
-git clone https://github.com/tuusuario/mi-sistema-ventas.git
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/matilopez912/mi-sistema-ventas
 cd mi-sistema-ventas
 
-Instalar dependencias
+2. Crear entorno virtual
 
-pip install flask mysql-connector-python
+python -m venv venv
 
-Configurar la base de datos
-Crear una base de datos en MySQL:
+3. Activar entorno virtual
 
-CREATE DATABASE mi_base;
-USE mi_base;
-Importar la estructura desde schema.sql:
+Windows (PowerShell):
+venv\Scripts\activate
 
-schema.sql
-Configurar conexión en app.py
+Linux/Mac:
+source venv/bin/activate
 
-python
-conexion = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="TU_PASSWORD",
-    database="mi_base"
-)
-▶️ Ejecución
-Iniciar el servidor Flask:
-python app.py
+4. Instalar dependencias
 
-Abrir en el navegador:
+pip install -r requirements.txt
 
-http://127.0.0.1:5000/
+5. Configurar base de datos
+
+Crear una base de datos en MySQL.
+
+Importar el archivo schema.sql.
+
+6. Ejecutar la aplicación
+
+flask run
+La aplicación estará disponible en http://127.0.0.1:5000.
+
+📂 Estructura del proyecto
+
+mi-sistema-ventas/
+│── app.py              # Archivo principal Flask
+│── schema.sql          # Script de base de datos
+│── requirements.txt    # Dependencias del proyecto
+│── templates/          # HTML (Jinja2)
+│── static/             # CSS y recursos estáticos
+│── README.md           # Documentación
+
+
+📸 Capturas de pantalla
+
+Menú principal
+(docs/menu.png)
+
+Formulario de ventas
+(docs/nueva_venta1.png) (docs/nueva_venta1.png)
+
+Filtro de ventas
+(docs/buscar_ventas.png)
+(docs/resultado_busqueda.png)
+
+Cálculo de sueldos
+(docs/calculo1.png) (docs/calculo2.png)
+(docs/resultado_calculo_comisiones.png)
+
+🤝 Contribuciones
+Este proyecto es parte de mi portfolio, pero cualquier sugerencia o mejora es bienvenida.
+
+📜 Licencia
+Este proyecto está bajo la licencia MIT. Podés usarlo libremente para aprender o inspirarte.
+
+---
