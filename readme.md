@@ -62,19 +62,19 @@ mi-sistema-ventas/
 ## 📸 Capturas de pantalla
 
 ### Menú principal
-![Menú principal](docs/menu.png)
+![Menú principal]docs/menu.png
 
 ### Formulario de ventas
-![Formulario de ventas](docs/nueva_venta1.png)
+![Formulario de ventas]docs/nueva_venta1.png
 
 ### Filtro de ventas
-![Buscar ventas](docs/buscar_ventas.png)
-![Resultado búsqueda](docs/resultado_busqueda.png)
+![Buscar ventas]docs/buscar_ventas.png
+![Resultado búsqueda]docs/resultado_busqueda.png
 
 ### Cálculo de sueldos
-![Cálculo paso 1](docs/calculo1.png)
-![Cálculo paso 2](docs/calculo2.png)
-![Resultado comisiones](docs/resultado_calculo_comisiones.png)
+![Cálculo paso 1]docs/calculo1.png
+![Cálculo paso 2]docs/calculo2.png
+![Resultado comisiones]docs/resultado_calculo_comisiones.png
 
 🤝 Contribuciones
 Este proyecto es parte de mi portfolio, pero cualquier sugerencia o mejora es bienvenida.
