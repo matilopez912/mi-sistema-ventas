@@ -16,8 +16,7 @@ Este proyecto forma parte de mi portfolio y está pensado para mostrar integraci
 
 ## 🛠️ Instalación
 
-### 1. Clonar el repositorio
-```bash
+1. Clonar el repositorio
 git clone https://github.com/matilopez912/mi-sistema-ventas
 cd mi-sistema-ventas
 
@@ -74,7 +73,7 @@ mi-sistema-ventas/
 ### Cálculo de sueldos
 ![Cálculo paso 1](docs/calculo1.png)
 ![Cálculo paso 2](docs/calculo2.png)
-![Resultado comisiones](docs/resultado_calculo_comisiones.png
+![Resultado comisiones](docs/resultado_calculo_comisiones.png)
 
 🤝 Contribuciones
 Este proyecto es parte de mi portfolio, pero cualquier sugerencia o mejora es bienvenida.
